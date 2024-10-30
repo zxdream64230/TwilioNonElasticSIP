@@ -80,12 +80,3 @@ This integration setup was inspired by a solution provided by **@Emagine Reality
 ## Troubleshooting
 
 Ensure your Twilio phone number is correctly configured to forward calls to your server's `/voice-webhook` endpoint. Additionally, check that Retell SDK credentials and Agent ID are properly set up.
-
----
-
-For more information, visit the [GitHub repository](https://github.com/HamChowderr/TwilioNonElasticSIP).
-
-Happy coding!
-```
-
-This version includes the Skool group link and credits @Emagine Reality for the fix.
