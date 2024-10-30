@@ -1,6 +1,3 @@
-Here’s the updated `README.md` with the Skool group link and credit:
-
-```markdown
 # Twilio and Retell Voice Call Integration
 
 This Node.js application integrates Twilio's Voice API with the Retell SDK, allowing inbound calls to be routed through Retell's SIP endpoint. The project leverages Express.js to handle HTTP requests and sets up a Twilio Voice Webhook for processing inbound calls. The call is registered with Retell to obtain a `call_id`, which is then used to route the call through Retell's SIP infrastructure.
