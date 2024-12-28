@@ -45,6 +45,17 @@ app.post('/voice-webhook', async (req, res) => {
   }
 });
 
+// Add this near your other routes
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'ok' });
+});
+
+// Add basic logging middleware
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.url}`);
+  next();
+});
+
 // Start Express Server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhostport ${PORT}`);
