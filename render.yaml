@@ -1,7 +1,7 @@
 services:
   - type: web
     name: retell-twilio-webhook
-    env: node
+    runtime: node
     buildCommand: npm install
     startCommand: node index.js
     envVars:
