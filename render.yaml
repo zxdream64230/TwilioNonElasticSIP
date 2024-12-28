@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: retell-twilio-webhook
+    env: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: RETELL_API_KEY
+        sync: false
+      - key: RETELL_AGENT_ID
+        sync: false
+      - key: RETELL_SIP_DOMAIN
+        sync: false
+    autoDeploy: true 
